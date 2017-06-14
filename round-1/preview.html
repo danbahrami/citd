@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Live preview</title>
+  </head>
+  <body>
+    <p style="text-align: center; margin-top: 100px;">Drag this tab onto the external monitor and full screen it</p>
+    <script>
+      window.addEventListener('message', function(e) {
+        if (
+          window.location.origin === 'file://' ||
+          window.location.origin === (e.origin || e.originalEvent.origin)
+        ) {
+          document.documentElement.innerHTML = e.data;
+        }
+      });
+
+      setInterval(function() {
+        var content = localStorage.getItem('content');
+
+        if(content.length) {
+          document.documentElement.innerHTML = localStorage.getItem('content');
+          document.title = 'Live preview';
+        }
+      }, 500);
+    </script>
+  </body>
+</html>
