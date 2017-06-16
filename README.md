@@ -11,8 +11,8 @@ git clone git@github.com:danbahrami/citd.git ./citd
 Step 3) Open the editor and live preview pages in your browser:
 
 ```
-open ./citd/round-1/editor.html
-open ./citd/round-1/preview.html
+open ./citd/{round name}/editor.html
+open ./citd/{round name}/preview.html
 ```
 
 Step 4) Arrange the windows so that the editor is full screen on your laptop display and the live preview is fullscreen on the external monitor.
