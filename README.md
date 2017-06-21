@@ -5,7 +5,7 @@ Step 1) Connect your laptop to the external monitor and disable mirroring.
 
 Step 2) Open your command line and run:
 ```
-git clone git@github.com:danbahrami/citd.git ./citd
+git clone https://github.com/geckoboard/citd
 ```
 
 Step 3) Open the editor and live preview pages in your browser:
